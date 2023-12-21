@@ -11,7 +11,7 @@ const MovieCart = () => {
     async function fetchMovies() {
       try {
         const response = await fetch(
-          `http://www.omdbapi.com/?apikey=50d5e3c6&s=${searchTerm || defaultSearchTerm}`
+          `https://www.omdbapi.com/?apikey=50d5e3c6&s=${searchTerm || defaultSearchTerm}`
         );
         if (!response.ok) {
           throw new Error("Network response was not ok.");
