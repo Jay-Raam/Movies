@@ -1,0 +1,94 @@
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #000;
+}
+
+/* Centered heading styles */
+.center {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Search bar styles */
+.main {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 72px;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.767);
+}
+
+.main:focus {
+  border-color: #000000;
+  box-shadow: 0 0 5px 0 #ffffff;
+}
+
+/* Movie list styles */
+.one {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.two:hover {
+  transform: translateY(-12px);
+}
+
+.two {
+  width: calc(50% - 40px);
+  max-width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.text {
+  margin-bottom: 8px;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.no-image {
+  color: #999;
+}
+
+/* Media Queries for Responsive Design */
+
+/* smaller than 768px */
+@media (max-width: 767px) {
+  .main {
+    width: 80%;
+    max-width: none;
+  }
+
+  .two {
+    width: 100%; 
+  }
+}
